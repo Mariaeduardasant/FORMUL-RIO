@@ -1,0 +1,125 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./CSS/STYLE.CSS">
+        <style>
+            body{
+                background-image: linear-gradient(to bottom,#CE8027, #ebb351);
+        height: 1100PX;
+        
+            }
+        </style>
+    </head>
+    <body>
+        <script type="module" src="./JS/SCRIPT.JS"></script>
+    
+    <div class="wrapper">
+        <h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+        <div class="header">
+            <ul>
+                <li class="active form_1_progessbar">
+                    <div>
+                        <DIV>NOME</DIV>
+                        <p>1</p>
+                        
+                    </div>
+                </li>
+                <li class="form_2_progessbar">
+                  <div>
+                        <DIV>ENDEREÇO</DIV>
+                        <p>2</p>
+                    </div>
+                </li>
+                <li class="form_3_progessbar">
+                   <div>
+                        <DIV>CONTATO</DIV>
+                        <p>3</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="form_wrap">
+            <div class="form_1 data_info">
+                <h2>INFORMAÇÕES BÁSICAS</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="Nome">Nome</label>
+                            <input type="text" name="Nome" class="input" id="Nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="Sobrenome">Sobrenome</label>
+                            <input type="Sobrenome" name="Sobrenome" class="input" id="Sobrenome" placeholder="Digite seu sobrenome" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="cpf">CPF</label>
+                            <input type="cpf" name="cpf" class="input" id="cpf" placeholder="Digite seu CPF" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="form_2 data_info" style="display: none;">
+                <h2>ENDEREÇO</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="Cidade">Cidade</label>
+                            <input type="text" name="Cidade" class="input" id="Cidade" placeholder="Digite sua cidade" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="Bairro">Bairro</label>
+                            <input type="text" name="Bairro" class="input" id="Bairro" placeholder="Digite seu bairro" required>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="form_3 data_info" style="display: none;">
+                <h2>CONTATO</h2>
+                <form>
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="company">Nome</label>
+                            <input type="text" name="nome" class="input" id="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="experience">Email</label>
+                            <input type="text" name="email" class="input" id="email" placeholder="Digite seu email">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="designation">Celular</label>
+                            <input type="text" name="numero" class="input" id="numero" placeholder="Digite seu número de celular">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="btns_wrap">
+            <div class="common_btns form_1_btns">
+                <button type="button" class="btn_next">CONTINUAR <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+            </div>
+            <div class="common_btns form_2_btns" style="display: none;">
+                <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>VOLTAR</button>
+                <button type="button" class="btn_next">CONTINUAR <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+            </div>
+            <div class="common_btns form_3_btns" style="display: none;">
+                <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>VOLTAR</button>
+                <button type="button" class="btn_done">ENVIAR</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal_wrapper">
+        <div class="shadow"></div>
+        <div class="success_wrap">
+            <span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
+            <p>SUA INSCRIÇÃO FOI ENVIADA!</p>
+        </div>
+    </div>
+    </body>
+    </html>
+    
